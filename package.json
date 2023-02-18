@@ -1,6 +1,6 @@
 {
-  "author": "Daniel Wade",
-  "description": "Started template for Electron, React, Python app",
+  "author": "Jakob Anderson",
+  "description": "Machine Learning Playground",
   "dependencies": {
     "@reduxjs/toolkit": "^1.1.0",
     "axios": "^0.21.1",
@@ -54,7 +54,7 @@
   "homepage": "./",
   "license": "MIT",
   "main": "main.js",
-  "name": "electron-react-python-template",
+  "name": "electricghost",
   "private": true,
   "scripts": {
     "build": "node ./scripts/dispatch build all",

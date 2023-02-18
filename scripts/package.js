@@ -1,5 +1,6 @@
 const { spawnSync } = require('child_process');
 const { Builder } = require('./build');
+const { packageName } = require('../package.json');
 
 const builder = new Builder();
 
@@ -28,6 +29,7 @@ class Packager {
     const options = {
       build: [
         'app',
+        `--executableName=${packageName}`,
         '--extra-resource=./resources',
         '--icon ./public/favicon.ico',
         '--platform linux',
@@ -45,6 +47,7 @@ class Packager {
         `--icon ${path('../utilities/deb/images/icon.ico')}`,
         `--background ${path('../utilities/deb/images/background.png')}`,
         '--title "Example app"',
+        `--executableName=${packageName}`,
         '--overwrite'
       ].join(' '),
 
